@@ -1,0 +1,112 @@
+
+.portal-phone {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #FFF;
+	font-size: 20px;
+}
+.portal-phone span {
+	font-size: 14px;
+}
+
+.login {
+	background-image: url(../img/vault.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 600px;
+	
+}
+.login-window {
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	color: #FFF;
+	margin: 200px 0;
+	padding: 20px;
+}
+.login-window h4 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.forgot-password {
+	display: block;
+	text-align: center;
+	color: #FFF;
+	text-decoration: underline;
+}
+.forgot-password:hover {
+	color: #DDD;
+}
+.portal-wrap {
+	background: #FFF;
+}
+.portal-wrap .container {
+	padding: 50px 0;
+}
+.portal-wrap h1 {
+	text-align: center;
+	margin: 30px;
+}
+.portal-wrap .card {
+	border-radius: 5px;
+}
+.portal-wrap .card-header {
+	background-color: #a8cad9;
+	color: #FFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.btn-primary {
+	background-color: #10bd40;
+}
+
+#client-account .card-block, #client-analysis .card-block {
+	max-height: 500px;
+	height: 500px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+}
+p.analysis {
+	padding: 30px 0;
+	border-bottom: 1px solid #CCC;
+}
+#progress_list th {
+	color: #3d768e;
+}
+#progress_list h3 {
+	color: #3d768e;
+	margin-top: 30px;
+}
+#progress_list .bureau-header strong {
+	color: #CC0000;
+	font-size: 20px;
+}
+
+/* agreement */
+.card-block.pre-scrollable.agreement {
+	max-height: 500px;
+}
+
+#prospect-portal table {
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+
+@media screen and (max-width: 767px) {
+	.portal-phone {
+		position: relative;
+		display: block;
+		text-align: center;
+		top: auto;
+		left: 0;
+	}
+	#main-header nav {
+		position: relative;
+		bottom: auto;
+		right: auto;
+		text-align: right;
+	}
+}

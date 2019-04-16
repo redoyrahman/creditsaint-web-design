@@ -1,0 +1,1370 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: Cinzel, serif;
+}
+
+header {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#logo {
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+#logo img {
+    transition: all 0.5s ease;
+    width: 350px;
+}
+
+header.scroll #logo {
+    transition: all 0.5s ease;
+    padding: 10px 0;
+
+}
+
+header.scroll #logo img {
+    width: 400px;
+    transition: all 0.5s ease;
+}
+
+.loginbox {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    background-color: #FFF;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.phone,
+.get-started-button,
+.featured .getstarted a {
+    background: linear-gradient(to bottom, #4982a4 0%, #3f708e 99.9%);
+    border: 1px solid #3f708e;
+    color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #000;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.phone a,
+.phone .fas,
+.featured .getstarted a,
+.featured .getstarted .fas,
+.get-started-button {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.phone .fas {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#headerphone {
+    position: absolute;
+    top: 45px;
+    right: 100px;
+}
+
+/* ------------ navigation ------------------ */
+
+#navbtn {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 50px;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 50px;
+    cursor: pointer;
+    cursor: hand;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#navbtn.sel {
+
+}
+
+nav {
+    position: absolute;
+    top: 87px;
+    right: 10px;
+    background-image: url(../img/navarrow.svg);
+    background-repeat: no-repeat;
+    background-position: 260px top;
+    background-size: 20px;
+    padding-top: 15px;
+    display: none;
+    z-index: 100;
+}
+
+nav ul {
+    background-color: #FFF;
+    border: 2px solid #081939;
+    border-top-width: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+
+    border-bottom: 1px solid #DDD;
+}
+
+nav ul li:last-child {
+    border-bottom-width: 0;
+}
+
+nav ul li a {
+    line-height: 40px;
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    display: block;
+    color: #081939;
+    text-decoration: none;
+}
+
+nav ul li.current a {
+    background-color: #e8ecf3;
+}
+
+nav ul li a:hover {
+    background-color: #2066a9;
+    color: #FFF;
+}
+
+.menu-global {
+    backface-visibility: hidden;
+    position: absolute;
+    left: 11px;
+    border-top: 3px solid #4982a4;
+    width: 32px;
+    transition: 0.55s;
+}
+
+.menu-top {
+    top: 11px;
+}
+
+.menu-middle {
+    top: 23px;
+}
+
+.menu-bottom {
+    top: 35px;
+}
+
+#navbtn.sel .menu-top {
+    backface-visibility: hidden;
+    top: 23px;
+    transform: rotate(220deg);
+    -webkit-transform: rotate(220deg);
+    transition: 0.55s 0.5s;
+}
+
+#navbtn.sel .menu-middle {
+    opacity: 0;
+}
+
+#navbtn.sel .menu-bottom {
+    backface-visibility: hidden;
+    top: 23px;
+    transform: rotate(-220deg);
+    -webkit-transform: rotate(-220deg);
+    transition: 0.55s 0.5s;
+}
+
+.page-wrap {
+    padding-top: 100px;
+}
+
+/* ------------------- home sections ------------------- */
+.home-rated {
+    display: inline-block;
+    line-height: 1.2;
+    float: left;
+    width: 92%;
+}
+
+.home-sectionone {
+    background-image: url(../img/home-section1.jpg);
+    background-size: 100% auto;
+    background-position: 50%;
+}
+
+.home-sectionone li a {
+    font-size: 1rem;
+}
+
+.home-sectionone .content-area,
+.packages-sectionone .content-area,
+.faq-sectionone .content-area {
+
+    padding: 80px 0;
+    background-image: url(../img/home-section1fade.png);
+    background-size: 70% auto;
+    background-position: right;
+    background-repeat: repeat-y;
+    text-align: right;
+    color: #081939;
+    font-size: 1.2em;
+}
+
+.home-sectionone .content-area {
+    padding-top: 110px;
+}
+
+.home-sectionone .col-md-7,
+.packages-sectionone .col-md-7,
+.faq-sectionone .col-md-7 {
+    margin-left: 41%;
+}
+
+.home-sectionone ul {
+    list-style: none;
+}
+
+.home-sectionone .fas {
+    font-size: 40px;
+    color: #1FA543;
+    vertical-align: middle;
+}
+
+.home-sectionone li {
+    padding: 5px 0;
+    line-height: 50px;
+}
+
+.get-started-button {
+    padding: 5px 20px;
+    margin-right: 50px;
+}
+
+.get-started-button:hover {
+    color: #081939;
+    text-decoration: none;
+}
+
+.home-sectiontwo {
+    background-color: #3e708f;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.home-sectiontwo h2 {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+}
+
+.home-sectiontwo .phone,
+.featured .getstarted a {
+    display: inline-block;
+}
+
+.home-sectionthree,
+.home-sectionfour {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.home-sectionthree h2,
+.home-sectionfour h2,
+.programs h2,
+.featured h2 {
+    color: #081939;
+    border-bottom: 2px solid #081939;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+img.home-separator {
+    vertical-align: top;
+    margin-top: -1px;
+}
+
+.home-section {
+    position: relative;
+    height: 500px;
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.home-section.left {
+    background-position: 100% 50%;
+}
+
+.home-section.right {
+    background-position: 0 50%;
+}
+
+.home-section .background-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-section .background-slide .bg, .home-section .background-slide .border {
+    float: left;
+    height: 100%;
+}
+
+.home-section .background-slide .bg {
+    background-repeat: repeat;
+    width: 40%;
+}
+
+.home-section .background-slide .border {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 60%;
+}
+
+.home-section.right .background-slide .border {
+    background-position: right;
+}
+
+.home-section.left .background-slide .border {
+    background-position: left;
+}
+
+.home-section .background-slide.darkblue .bg {
+    /*background-image: url(../img/home-darkblue-bg.png);*/
+    background-color: #3b6d8c;
+}
+
+.home-section .background-slide.darkblue .border {
+    background-image: url(../img/home-darkblue-border4.png);
+}
+
+.home-section .background-slide.blue .bg {
+    /*background-image: url(../img/home-blue-bg.png);*/
+    background-color: #e9e9e9;
+}
+
+/*-------- custom ---------*/
+section.home-section.slideout.right.personal .col-md-6{
+    color: #818286;
+}
+
+section.home-section.slideout.right.build .col-md-6{
+    color: #818286;
+}
+/*-------- custom ---------*/
+
+.home-section .background-slide.blue .border {
+    background-image: url(../img/home-blue-border.png);
+}
+
+.home-section.left .background-slide.blue .border {
+    background-image: url(../img/home-blue-border-left.png);
+}
+
+.home-section .background-slide.white .bg {
+    background: #FFF;
+}
+
+.home-section .background-slide.white .border {
+    background-image: url(../img/home-white-border.png);
+}
+
+.home-section .container {
+    padding-top: 100px;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.home-section h2 {
+    font-size: 2.5rem;
+}
+
+.home-section.worryfree {
+    background-image: url(../img/home-worryfree.jpg);
+    background-size: 100% auto;
+    background-position: 50%;
+}
+
+.home-section.worryfree .background-slide .bg {
+    background-image: url(../img/home-worryfreebg.png);
+}
+
+.home-section.worryfree .background-slide .border {
+    background-image: url(../img/home-worryfreeborder.png);
+}
+
+.home-section.worryfree .container,
+.home-section.help .container {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.bbb {
+    display: inline-block;
+    padding-top: 47px;
+}
+
+img.moneyback {
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.home-section.help {
+    background-image: url(../img/home-help.jpg);
+}
+
+.home-section.personal {
+    background-image: url(../img/home-personal.jpg);
+}
+
+.home-section.restoration {
+    background-image: url(../img/home-restoration.html);
+}
+
+.home-section.build {
+    background-image: url(../img/home-build.jpg);
+}
+
+.home-section.account {
+    background-image: url(../img/home-account.jpg);
+}
+
+.home-section.help .container,
+.home-section.personal .container,
+.home-section.build .container,
+.home-section.account .container {
+    color: #FFF;
+}
+
+.home-section.help .container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.home-section.help .container li {
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.home-section.help .container .fas {
+    color: #1FA543;
+    padding-right: 5px;
+}
+
+.home-section.right .col-md-6 {
+    margin-left: 50%;
+}
+
+.home-sectionfour .col-md-4 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.home-sectionfour .step {
+    border: 2px solid #2066a9;
+    border-radius: 125px;
+    padding: 10px;
+    width: 250px;
+    margin: 10px auto;
+}
+
+.home-sectionfour .step-inner {
+    border-radius: 125px;
+    height: 230px;
+    font-size: 40px;
+    padding-top: 20px;
+    font-family: Cinzel, serif;
+    color: #FFF;
+}
+
+.home-sectionfour .step-inner span {
+    font-size: 120px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 120px;
+}
+
+.home-sectionfour .first .step-inner {
+    background-color: #F2F2F2;
+    color: #2066a9;
+}
+
+.home-sectionfour .second .step-inner {
+    background-color: #2066a9;
+}
+
+.home-sectionfour .third .step-inner {
+    background-color: #000;
+}
+
+.featured .getstarted {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.featured .getstarted a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.featured-logos img {
+    width: 100%;
+    height: 70px;
+    max-width: 230px;
+    margin: 20px;
+    max-height: 70px;
+    vertical-align: middle;
+}
+
+/* ---------------------- programs chart -------------------- */
+
+.programs {
+    background-image: url(../img/home-bottom-bg.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 50px 0;
+}
+
+.programs h2,
+.featured h2 {
+    margin-top: 80px;
+}
+
+.programs table {
+    background-color: #FFF;
+    border-spacing: 6px;
+    border-collapse: separate;
+}
+
+.programs table th {
+    background-color: #2066a9;
+    color: #FFF;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.programs table th:first-child {
+    text-align: left;
+}
+
+.programs table th, .programs table td {
+    border-top-width: 0;
+    padding: 5px;
+}
+
+.programs table td {
+    color: #081939;
+}
+
+.programs table td:first-child {
+    text-align: left;
+}
+
+.programs table .fas {
+    font-size: 1.5rem;
+    color: #1FA543;
+}
+
+.programs table .bg-primary th {
+    background-color: #081939;
+}
+
+.programs .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e9f0f6;
+}
+
+/* -------------------- packages -------------------- */
+.packages-sectionone {
+    background-image: url(../img/package-section1.jpg);
+    background-size: 100% auto;
+    background-position: 50%;
+}
+
+.packages-sectionone .content-area {
+    padding: 120px 0;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+.packages-sectionone h1 {
+    font-size: 3.8rem;
+}
+
+/* --------------------- faq -------------------------- */
+.faq-sectionone {
+    background-image: url(../img/faq-section1.jpg);
+    background-size: 100% auto;
+    background-position: 50%;
+}
+
+.faq-sectionone .content-area {
+    padding: 120px 0;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+.faq-sectionone h1 {
+    font-size: 3.7rem;
+}
+
+.faq-item {
+    background-color: #e9f0f6;
+    border: 6px solid #FFF;
+}
+
+.faq-item.alt {
+    background-color: #FFF;
+}
+
+.faq-header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    cursor: pointer;
+    cursor: hand;
+    padding: 20px 30px;
+    text-align: left;
+}
+
+.faq-item.alt .faq-header {
+    padding: 10px 30px;
+}
+
+.faq-caret {
+    float: right;
+    font-size: 2rem;
+}
+
+.faq-body {
+    display: none;
+    padding: 20px 30px;
+    text-align: left;
+}
+
+.faq .getstarted {
+    margin-top: 30px;
+}
+
+/*-------------------- disclosure ----------------------- */
+.disclosure, .terms, .privacy, .guarantee {
+    padding: 50px 0;
+    font-size: 0.8rem;
+}
+
+.disclosure h2, .terms h2 {
+    font-size: 1.5rem;
+}
+
+.privacy {
+    font-size: 1rem;
+}
+
+.privacy li {
+    padding-top: 10px;
+}
+
+/* ---------------------- get started -------------------- */
+.getstarted-container {
+    padding: 50px 0;
+}
+
+.page-link {
+    display: inline-block;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.page-item.spouse {
+    font-size: 0.8rem;
+}
+
+.page-item .arrow {
+    background-image: url(../img/gs-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    line-height: 1.25;
+    padding: 0.5rem 0;
+    display: inline-block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-item.last .arrow {
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.page-item:hover .arrow {
+    background-image: url(../img/gs-arrow-hover.png);
+}
+
+.page-item.active .arrow {
+    background-image: url(../img/gs-arrow-active.png);
+}
+
+.page-item.before .arrow {
+    background-color: #00103b;
+    border-color: #00103b;
+    background-image: url(../img/gs-arrow-active.png);
+}
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 16px;
+    padding-left: 50px;
+    padding-right: 37px;
+    padding-bottom: 16px;
+    border-radius: 6px;
+    position: relative;
+    font-size: 21px;
+    line-height: 21px;
+    transition: all 0.2s;
+    text-align: center;
+    box-shadow: 0 7px 7px rgba(46, 46, 46, 0.35);
+    font-weight: 600;
+    color: #fdfdfd;
+}
+
+.button i {
+    position: absolute;
+    top: 16px;
+    left: 26px;
+}
+
+.button-green {
+    background-color: #0ca537;
+}
+
+.button-green:hover {
+    background: #10bd40;
+}
+
+.page-item.active .page-link,
+.btn-primary {
+    background-color: #00103b;
+    border-color: #00103b;
+}
+
+.btn-primary {
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.text-primary {
+    color: #00103b !important;
+    margin-top: 40px;
+}
+
+#gs-form .program-title {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#gs-form .gs-program-selector .custom-control-indicator {
+    left: 40%;
+    top: 65px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border: 2px solid #10bd40;
+    border-radius: 0;
+}
+
+#gs-form .gs-program-selector .custom-control-input:checked ~ .custom-control-indicator {
+    background-color: #10bd40;
+    background-image: url(../img/checkbox.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#gs-form .gs-program-selector label.custom-radio {
+    padding: 0 0 70px 0;
+    margin: 0 14px 0 0;
+}
+
+.gs-program-table th.hover {
+    background-color: #5398b6;
+}
+
+.gs-program-table td.hover {
+    background-color: #e9f1f5;
+    border-top: 1px solid #8fbed2;
+}
+
+.gs-program-table tr:nth-of-type(odd) td.hover {
+    background-color: #d0e2eb;
+}
+
+.gs-program-table .fas {
+    font-size: 1em;
+    color: #3D768E;
+}
+
+#gs-programs-details.hidden {
+    display: none;
+}
+
+#add-spouse {
+    margin: 40px auto;
+    background-color: #00103b;
+    max-width: 500px;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#spouse-checkbox {
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border: 2px solid #10bd40;
+    vertical-align: middle;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#spouse-checkbox.selected {
+    background-color: #10bd40;
+    background-image: url(../img/checkbox.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.spouse-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#add-spouse span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+}
+
+#add-spouse .text-primary {
+    color: #FFF !important;
+    display: inline;
+    font-size: 1.5rem;
+}
+
+#add-spouse .text-muted {
+    color: #0ca537 !important;
+    display: inline;
+    font-size: 1rem;
+}
+
+#spouse-program {
+    display: none;
+}
+
+#coupon-box {
+    display: none;
+}
+
+.step5-require {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #3D768E;
+}
+
+.step5-require.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#gs-form .form-control-feedback {
+    font-size: 13px;
+}
+
+.card-image img {
+    max-height: 40px;
+}
+
+.form-group.row.sameaddress {
+    margin-top: 30px;
+}
+
+/* -------------------- footer ------------------------- */
+
+footer {
+    background-color: #3e708f;
+    padding-top: 30px;
+    color: #FFF;
+}
+
+footer .callnow {
+    font-family: Cinzel, serif;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+footer .callnow span {
+    color: #1FA543;
+}
+
+footer .callnow .phone {
+    font-family: "Open-Sans", sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+footer .social {
+    margin-top: 20px;
+}
+
+footer .social a {
+    color: #FFF;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 5px;
+}
+
+footer .address {
+    color: #bfcfed;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 20px;
+    display: block;
+}
+
+footer .address span {
+    color: #bfcfed;
+    font-size: 1.1rem;
+}
+footer .footer-bottom {
+    background-color: #b3c7d3;
+    color: #2c4d8c;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+footer .footer-bottom a {
+    color: #2c4d8c;
+    text-decoration: underline;
+}
+/*-----custom------*/
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+}
+/*------------*----------*/
+#ca_badge_v1 {
+    display: inline-block !important;
+    min-height: 120px !important;
+    margin-right: 50px !important;
+}
+
+#ca_badge_v1 .ca-badge-icon-c {
+    margin: 3px 0 !important;
+}
+
+#ca_badge_v1 .ca-badge-icon-c img.ca-badge-icon {
+    width: 30px !important;
+}
+
+#ca_badge_v1 .ca-badge-title {
+    font-size: 1.5em !important;
+}
+
+#ca_badge_v1 .ca-badge-subtitle {
+    font-size: 1em !important;
+    margin-bottom: 0 !important;
+}
+
+#ca_badge_v1 .ca-badge-site {
+    height: 24px !important;
+}
+
+#ca_badge_v1 .ca-badge-site .ca-badge-logo {
+    width: 130px !important;
+}
+
+#ca_badge_v1 .ca-badge-company {
+    padding: 0 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .home-section .container {
+        font-size: 1.0rem;
+        line-height: 1.8;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        position: relative;
+    }
+
+    .page-wrap {
+        padding-top: 0;
+    }
+
+    .home-sectionone .content-area,
+    .packages-sectionone .content-area,
+    .faq-sectionone .content-area {
+        padding: 40px 0;
+    }
+
+    .home-sectionone h1,
+    .home-section h2,
+    .faq-sectionone h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-section {
+        height: 400px;
+    }
+
+    .home-section .container {
+        padding-top: 50px;
+    }
+
+    .home-section.worryfree .container {
+        font-size: 1.3rem;
+    }
+
+    .gs-pagination-steps {
+        font-size: 0.8rem;
+    }
+
+    .page-item.spouse {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #logo {
+        max-width: 80%;
+    }
+
+    #logo img {
+        width: 100%;
+    }
+
+    #headerphone {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: inline-block;
+        margin: 5px;
+
+    }
+
+    #navbtn {
+        top: 30px;
+    }
+
+    nav {
+        top: 75px;
+    }
+
+    .home-sectionone li a {
+        font-size: 0.7rem;
+    }
+
+    .home-sectionone,
+    .packages-sectionone,
+    .faq-sectionone {
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: cover;
+    }
+
+    .home-sectionone .content-area,
+    .packages-sectionone .content-area,
+    .faq-sectionone .content-area {
+        padding-bottom: 0;
+    }
+
+    .home-sectionone .col-md-7,
+    .packages-sectionone .col-md-7,
+    .faq-sectionone .col-md-7 {
+        margin-left: 0;
+    }
+
+    .home-sectionone h1,
+    .packages-sectionone h1,
+    .faq-sectionone h1 {
+        font-size: 1.8rem;
+        margin-left: 40%;
+        margin-bottom: 30px;
+    }
+
+    .home-sectionone ul, .packages-sectionone p, .faq-sectionone p {
+        background-color: #FFF;
+        margin: 0;
+        font-size: 0.9rem;
+        padding: 5px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .home-sectionone li {
+        line-height: 1;
+    }
+
+    .home-sectionone .fas {
+        font-size: 24px;
+    }
+
+    .get-started-button {
+        display: none;
+    }
+
+    .home-section {
+        height: auto;
+        background: none !important;
+    }
+
+    .home-section .background-slide {
+        height: 200px;
+        position: relative;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-section.worryfree .background-slide {
+        background-image: url(../img/home-worryfree.jpg);
+        background-size: auto 400px;
+        background-position: right;
+    }
+
+    .home-section .bg,
+    .home-section .border {
+        display: none !important;
+    }
+
+    .home-section.worryfree .container {
+        font-size: 1rem;
+    }
+
+    .home-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .home-section.right .col-md-6 {
+        margin-left: 0;
+    }
+
+    .home-section .container {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .bbb {
+        padding-top: 35px;
+        max-width: 50%;
+    }
+
+    a#bbblink.ruhzbal, a#bbblink.ruhzbul {
+        width: 160px !important;
+    }
+
+    img.moneyback {
+        max-width: 40%;
+        margin-left: 10px;
+    }
+
+    .home-section.personal .container,
+    .home-section.build .container {
+        background-image: url(../img/home-blue-bg.png);
+    }
+
+    .home-section.account .container {
+        background-image: url(../img/home-darkblue-bg.png);
+    }
+
+    .home-section.personal .background-slide {
+        background-image: url(../img/home-personal.jpg);
+
+    }
+
+    .home-section.build .background-slide {
+        background-image: url(../img/home-build.jpg);
+
+    }
+
+    .home-section.account .background-slide {
+        background-image: url(../img/home-account.jpg);
+
+    }
+
+    .home-sectionfour .step {
+        width: 200px;
+        line-height: 1;
+    }
+
+    .home-sectionfour .step-inner {
+        height: 180px;
+    }
+
+    .home-sectionfour .step-inner span {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .programs table {
+        font-size: 0.7rem;
+    }
+
+    .programs table th {
+        font-size: 0.8rem;
+    }
+
+    .programs table .fas {
+        font-size: 1rem;
+    }
+
+    .featured-logos img {
+        height: 40px;
+        max-width: 150px;
+        margin: 10px;
+        max-height: 40px;
+    }
+
+    .faq-header {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .gs-pagination-steps {
+        display: none;
+    }
+
+    .gs-pagination-steps .page-link {
+        min-height: 118px;
+    }
+
+    #gs-form .program-title {
+        font-size: 14px;
+    }
+
+    #gs-form h2 {
+        font-size: 14px;
+    }
+
+    #gs-form .gs-description {
+        font-size: 14px;
+    }
+
+    footer .col-md-4 {
+        text-align: center !important;
+        padding-bottom: 20px;
+    }
+
+    #ca_badge_v1 {
+        margin-right: 0px !important;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    header .container {
+        text-align: center;
+    }
+
+    .loginbox {
+        right: 8px;
+    }
+
+    #navbtn {
+        top: 25px;
+        right: 15px;
+    }
+
+    nav {
+        top: 65px;
+        background-position: 275px top;
+    }
+
+    .home-rated {
+
+        width: 90%;
+    }
+
+    .home-sectionone li a {
+        font-size: 0.6rem;
+    }
+
+    .home-sectionone h1, .packages-sectionone h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #logo {
+        padding-top: 25px;
+    }
+
+    nav {
+        background-position: 255px top;
+    }
+
+    .home-sectionone .col-md-7 {
+        padding: 0 5px;
+    }
+
+    .home-sectionone ul,
+    .packages-sectionone p {
+        font-size: 0.7rem;
+    }
+
+    .home-sectionone li a {
+        font-size: 0.4rem;
+    }
+}
